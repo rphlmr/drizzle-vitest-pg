@@ -9,7 +9,7 @@ import {
   deleteUser,
 } from "./user.service";
 
-applyMigrations();
+await applyMigrations();
 
 await createUser(faker.person.fullName());
 
