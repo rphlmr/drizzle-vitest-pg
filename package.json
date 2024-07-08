@@ -1,0 +1,29 @@
+{
+  "name": "@vitest/example-test",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run db:generate && tsx src/index.ts",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "db:generate": "drizzle-kit generate"
+  },
+  "devDependencies": {
+    "@vitest/ui": "latest",
+    "vite": "latest",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "latest"
+  },
+  "stackblitz": {
+    "startCommand": "npm run test:ui"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.1.5",
+    "@faker-js/faker": "^8.4.1",
+    "drizzle-kit": "^0.22.8",
+    "drizzle-orm": "^0.31.2",
+    "tsx": "^4.16.2"
+  }
+}
